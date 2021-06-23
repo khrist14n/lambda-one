@@ -1,0 +1,10 @@
+{
+    "name": "lambda-one",
+    "version": "0.0.0",
+    "private": true,
+    "dependencies": {
+        "https": "^1.0.0",
+        "mysql2": "^2.2.5",
+        "sequelize": "^6.6.2"
+    }
+}

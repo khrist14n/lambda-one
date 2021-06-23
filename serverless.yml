@@ -1,0 +1,7 @@
+custom: 
+    webpackIncludeMpdules:
+        forceInclude:
+            - https
+            - sequelize
+            - mysql2
+            - https
