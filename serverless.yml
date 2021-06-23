@@ -1,8 +1,5 @@
 service: lambda-one
 
-custom:
-  secrets: ${file(secrets.json)}
-
 provider:
   name: aws
   runtime: nodejs12.x
