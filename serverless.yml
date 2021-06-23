@@ -27,4 +27,3 @@ custom:
             - https
             - sequelize
             - mysql2
-            - https
