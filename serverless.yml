@@ -1,3 +1,29 @@
+service: lambda-one
+
+custom:
+  secrets: ${file(secrets.json)}
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  timeout: 30
+  stage: dev
+functions:
+    create:
+        handler: handler
+        events:
+          - http:
+              path: create
+              method: post
+              cors: true
+    read:
+        handler: handler
+        events:
+          - http:
+              path: read
+              method: get
+              cors: true
+  
 custom: 
     webpackIncludeMpdules:
         forceInclude:
